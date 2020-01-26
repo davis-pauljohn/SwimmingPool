@@ -1,0 +1,51 @@
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 3px;
+    height: 25px;
+    border: darkgray 1px solid;
+}
+
+button {
+    height: 37px;
+    width: 80px;
+    border: lightgray 1px solid;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0s;
+    box-shadow: none;
+    
+    :hover {
+        height: 39px;
+        width: 82px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        transition: 0.2s;
+    }
+    :hover[disabled] {
+        cursor: not-allowed;
+    }
+}
+button:focus {
+    height: 37px;
+    width: 80px;
+    outline: 0;
+    border: lightgray 1px solid;
+    box-shadow: darkgray 1px 1px 2px;
+    box-shadow: 0 0 0;
+    transition: 0s;
+}
+
+sp-login {
+    grid-column: 3 / 7;
+    grid-row: 4 / 7;
+    text-align: center;
+}
